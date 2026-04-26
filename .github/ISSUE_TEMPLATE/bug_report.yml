@@ -1,0 +1,32 @@
+name: Bug report
+description: Report something that's broken or behaving unexpectedly.
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: AgentHound version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, plus what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. agenthound scan -c my-config.json
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "macOS 14.4, Python 3.14, uv 0.6.14"

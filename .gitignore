@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Bun / pnpm
+.bun/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets / scratch
+.env
+.env.*
+!.env.example
+*.local
+.playwright-mcp/
+
+# AgentHound runtime
+*.scan.json
+agenthound.log
+
+# Local Claude Code settings
+.claude/
